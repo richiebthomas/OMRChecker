@@ -1,0 +1,285 @@
+\documentclass[oneside,12pt]{Classes/CUEDthesisPSnPDF}
+\usepackage{times}
+%\begin{spacing}{2.0}
+%...
+%\end{spacing}
+\degree{BEIT}
+\degreedate{October 2024}
+\hbadness=10000
+\hfuzz=5pt
+% Put all the style files you want in the directory StyleFiles and usepackage like this:
+%\usepackage{StyleFiles/watermark}
+\usepackage{watermark}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,epsfig,epstopdf}
+\usepackage[version=3]{mhchem}
+\usepackage{xcolor}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{nomencl}
+\usepackage{listings}
+\usepackage{natbib}
+\usepackage{etoolbox}
+\usepackage{cases}
+\usepackage{longtable}
+\usepackage{enumerate}
+\usepackage{enumitem}
+\usepackage{pdfpages}
+\usepackage{graphics}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[english]{babel}
+\usepackage{subcaption}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{breqn}
+%\usepackage{times}
+%\usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+% Define block styles
+\tikzstyle{decision} = [diamond,aspect=3, draw, fill=blue!20, 
+    text width=15em, text centered, node distance=5cm ,minimum height=1em]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+    text width=30em, text centered, rounded corners, minimum height=1em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [ ellipse,draw,fill=red!20, node distance=5cm,
+    minimum height=2em]
+%\usepackage{cite}
+
+%titling,url,array}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{remark}[theorem]{Remark}
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+%\maketitle
+\begin{spacing}{1.0}
+\begin{titlepage}
+	\begin{center}
+	
+	\begin{large}
+	Mini Project Report Titled
+	\end{large}			
+		 
+		
+		\vspace*{1\baselineskip}
+		\begin{Large}
+		"OMR Checker: An Automated Optical Mark Recognition System for Educational Assessment"\\
+		\end{Large}
+		
+	
+			
+		
+	
+			
+		\vspace*{2\baselineskip}
+		Submitted\\
+in partial fulfillment of\\
+the requirements of the degree of\\
+\vspace*{1\baselineskip}
+		\begin{large}
+		Third Year of Engineering(T.E.) (Information Technology) \\
+		\end{large}
+		\vspace*{1\baselineskip}
+		
+		By\\
+		\vspace*{1\baselineskip}
+		\begin{large}
+			Student Name 1 (5020112)\\
+			Student Name 2 (5020113)\\
+			Student Name 3 (5020114)\\
+			Student Name 4 (5020115)\\
+                            		\end{large}
+		
+                         	   
+		\vspace*{1\baselineskip}
+		Under the Guidance of\\
+		\vspace*{1\baselineskip}
+		\begin{large}
+
+
+ Dr. Project Guide Name\\
+Professor, Information Technology\\
+\end{large}
+		
+	\begin{large}
+
+\vspace*{1\baselineskip}
+ Dr. External Guide Name\\
+External Guide, Company/Organization\\
+\end{large}	
+	\end{center}
+
+
+\begin{center}\includegraphics[scale=0.5]{agnellogo.jpg}\end{center}
+
+
+\begin{center}
+\begin{large}
+Department of Information Technology\\
+Fr. Conceicao Rodrigues Institute of Technology, Vashi, \\ Navi-Mumbai 400703\\  
+%(Autonomous Institute Affiliated to University of Mumbai)\\
+\vspace*{1\baselineskip}
+2024 - 2025
+\end{large}
+\end{center}
+\end{titlepage}
+\end{spacing}
+
+
+%set the number of sectioning levels that get number and appear in the contents
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+\rhead{} \chead{} \lhead{\leftmark} \rfoot{\footnotesize \thepage} \cfoot{} \lfoot{\footnotesize  \begin{tiny}
+OMR Checker: An Automated Optical Mark Recognition System for Educational Assessment\end{tiny}\\\begin{tiny}
+Student Name
+\end{tiny}(\begin{tiny}Roll No\end{tiny})}
+\frontmatter % book mode only
+\begin{titlepage}
+
+ \begin{center} \begin{Large} \textbf{CERTIFICATE}\end{Large} \end{center} 
+\vspace*{1\baselineskip}
+\begin{center} \begin{small} \textbf{This is to certify that the project entitled }\end{small} \end{center} 
+ \begin{center} \begin{Large} \textbf{OMR Checker: An Automated Optical Mark Recognition System for Educational Assessment}\end{Large} \end{center}
+\vspace*{1\baselineskip}
+		\center
+		Submitted By\\
+		\vspace*{1\baselineskip}
+		\begin{small}
+			Student Name 1 (5020112)\\
+			Student Name 2 (5020113)\\
+			Student Name 3 (5020114)\\
+			Student Name 4 (5020115)\\
+                            		\end{small}
+\vspace*{1\baselineskip}
+In partial fulfillment of degree of \textbf{T.E.} in \textbf{Information Technology} for term work of the \textbf{Semester VI} - Major Project- II  is approved.
+\vspace*{1\baselineskip}
+
+
+\begin{center}
+\hspace{0.2in} \line(1,0){100}
+\hspace{1.9in}
+            \line(1,0){100} \\
+\hspace{0.2in}
+External Examiner   \hspace{1.9in} Internal Examiner \\
+\vspace*{1\baselineskip}
+\end{center}
+\begin{center}
+\hspace{0.2in} \line(1,0){100}
+\hspace{1.9in}
+            \line(1,0){100} \\
+\hspace{0.2in}
+External Guide   \hspace{2.2in} Internal Guide \\
+\vspace*{1\baselineskip}
+\end{center}
+\begin{center}
+\hspace{0.2in} \line(1,0){100}
+\hspace{1.9in}
+            \line(1,0){100} \\
+\hspace{0.3in}
+HOD IT  \hspace{2.5in} Principal, FCRIT \\
+\vspace*{1\baselineskip}
+\end{center}
+
+
+\hspace{0.1in}Date:   \hspace{3.5in} College Seal
+\end{titlepage}
+
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+
+\newpage
+
+%Certificate part(Third Page)
+\vspace*{2\baselineskip}
+\begin{center}\begin{Large}\textbf{Declaration of the Student}\end{Large}\end{center}
+\vspace*{2\baselineskip}
+%\begin{large}
+I declare that this written submission represents my ideas in my own words and where others' ideas or words have been included, I have adequately cited and referenced the original sources.\\
+%\vspace*{1\baselineskip}
+\\I also declare that I have adhered to all principles of academic honesty and integrity and have not misrepresented or fabricated or falsified any idea / data / fact / source in my submission.\\ 
+%\vspace*{1\baselineskip}
+\\I understand that any violation of the above will be cause for disciplinary action by the Institute and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been taken when needed.
+\vspace*{1\baselineskip}
+		\begin{center}
+		
+		\begin{small}
+                             -------------------------------------     \hspace{0.5in} ------------------------------------\\
+			Student Name 1 (5020112)        \hspace{1.2in}                              (Signature)\\
+			Student Name 2 (5020113)                \hspace{1.2in}                      (Signature)\\
+			Student Name 3 (5020114)               \hspace{1.2in}                       (Signature)\\
+			Student Name 4 (5020115)                     \hspace{1.2in}                 (Signature) \\
+                            		\end{small}
+\end{center}
+\vspace*{1\baselineskip}
+
+\hspace{0.1in}Date:   \hspace{3.5in} Place:
+
+\include{acknowledgement}
+
+\include{abstract}
+
+\tableofcontents
+\listoftables
+\listoffigures
+\include{nomenclature}
+%\printnomenclature  %% Print the nomenclature
+%\addcontentsline{toc}{chapter}{Nomenclature}
+\mainmatter % book mode only
+\include{introduction}
+\include{literature_review}
+\include{methodology}
+\include{implementation}
+\include{results}
+\include{conclusions}
+%\include{6_References_AAM/ref}
+%\include{8_Appendix_AAM/chapter4}
+%\include{Appendix2/appendix2}
+
+%\include{Publication/publication}
+
+
+
+
+%\backmatter % book mode only
+%\appendix
+
+\setcitestyle{numbers}
+%\bibliographystyle{plainnat}
+%\bibliographystyle{vancouver}
+%\bibliographystyle{Classes/CUEDbiblio}
+%\bibliographystyle{unsrtnat}
+
+%\bibliographystyle{unsrt}
+\bibliographystyle{IEEEtran}
+
+
+%\bibliographystyle{apa}
+%\bibliographystyle{plain}
+%\bibliographystyle{Classes/jmb} % bibliography style
+
+\renewcommand{\bibname}{References} % changes default name Bibliography to References
+\bibliography{references} 
+%\bibliography{References/references} % References file 
+
+
+%\bibliographystyle{ieeetr}
+
+%\includepdf[pages=-]{paper_imc1}
+%\includepdf[angle=90]{certi_imc}
+%\includepdf{IFAC_email}
+%\includepdf[pages=-]{ifacconf.pdf}
+%\includepdf{IEEE_Trans_acceptance}
+%\includepdf[pages=-]{trans_smartgrid}
+\end{document}
